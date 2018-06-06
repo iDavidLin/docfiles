@@ -65,7 +65,7 @@ alias wfa='alfred pack -o ~/Desktop'
 
 # _docker
 alias k='docker'
-alias kc='docker compose'
+alias kc='docker-compose'
 alias kl='docker logs'
 alias klt='docker logs --tail 100'
 alias ks='docker ps'
@@ -264,3 +264,11 @@ alias dsk='cd ~/Library/Application\ Support/Karabiner'
 # _move file locations
 # TODO: add move files to hazel alias / function
 
+decode() {
+  echo `echo $1 | base64 --decode`
+}
+
+# Base64 encode
+encode() {
+  echo -n $1 | openssl base64
+}
