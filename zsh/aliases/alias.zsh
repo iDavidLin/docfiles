@@ -2,7 +2,6 @@
 alias _='sudo'
 alias kar="/Applications/Karabiner.app/Contents/Library/bin/karabiner"
 alias le='less -r'
-alias wifi='wifi-password -q'
 alias eop='echo $PATH'
 alias eo='echo'
 alias es='elasticsearch'
@@ -24,7 +23,6 @@ alias jj='killall tmux'
 alias loc='count_number_of_lines'
 # alias aw='k -h' TODO: ?
 alias c='ccat'
-alias b='bd'
 alias t='touch'
 alias zo='open'
 alias ff='open .'
@@ -41,11 +39,6 @@ alias v='mv'
 # _dev
 
 # _general
-alias co='coala'
-alias ll='ln -s'
-
-alias ser='serve'
-
 alias react='create-react-app'
 
 
@@ -66,6 +59,7 @@ alias wfa='alfred pack -o ~/Desktop'
 # _docker
 alias k='docker'
 alias kc='docker-compose'
+alias kcs='docker-compose ps'
 alias kl='docker logs'
 alias klt='docker logs --tail 100'
 alias ks='docker ps'
@@ -104,34 +98,6 @@ alias nig='npm install -g'
 alias nb='npm run build'
 alias nr='npm run'
 
-# _go
-alias o='go'
-alias ot='playgo'
-alias or='go run'
-alias oo='go install'
-alias ov='go vet'
-alias ob='go build'
-alias ora='go-pry'
-alias oa='go build -o main'
-
-alias ugo='Go-Package-Store'
-
-# _meteor
-alias mt='meteor'
-
-# _compile code
-alias sw='swift'
-
-# _ruby
-alias rb='ruby'
-
-# _piping
-alias h2='head -n 2'
-alias h10='head -n 10'
-alias t10='tail -n 10'
-
-alias hs='ghci'
-
 alias cwd='pwd | pbcopy'
 
 # _delete things
@@ -155,9 +121,6 @@ alias u='hugo'
 # _jekyll
 alias js='bundle exec jekyll serve'
 alias jb='jekyll build'
-
-# _ruby
-alias bx='bundle exec'
 
 # _nginx
 alias ngup='sudo nginx'
@@ -199,9 +162,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-
-# _cli tools
-alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 
 # _top
 alias cpu='top -o cpu'   # cpu
@@ -264,11 +224,3 @@ alias dsk='cd ~/Library/Application\ Support/Karabiner'
 # _move file locations
 # TODO: add move files to hazel alias / function
 
-decode() {
-  echo `echo $1 | base64 --decode`
-}
-
-# Base64 encode
-encode() {
-  echo -n $1 | openssl base64
-}
