@@ -163,6 +163,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+
 # _top
 alias cpu='top -o cpu'   # cpu
 alias mem='top -o rsize' # memory
