@@ -1,4 +1,4 @@
-# docfiles
+# Just a list of my dotfiles
 
 add codes in your `.zshrc` to source zsh
 
