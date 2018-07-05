@@ -35,6 +35,7 @@ alias mx='chmod +x'
 alias rr='rm -rf'
 # alias a='ls -FG'
 alias v='mv'
+alias cls='clear'
 
 # _dev
 
