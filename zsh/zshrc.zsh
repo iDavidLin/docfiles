@@ -3,6 +3,7 @@ export DOTFILES="$HOME/.dotfiles"
 # _source things
 source ~/.dotfiles/zsh/aliases/alias.zsh
 source ~/.dotfiles/zsh/functions/functions.zsh
+source ~/.dotfiles/zsh/bindings.zsh
 
 # _secret configs
 source ~/.secrets

@@ -24,8 +24,8 @@ nnoremap <C-H> <C-W><C-H>
 
 " Mappings in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
-nmap <silent> [w <Plug>(ale_previous_wrap) 
-nmap <silent> ]w <Plug>(ale_next_wrap) 
+nmap <silent> [w <Plug>(ale_previous_wrap)
+nmap <silent> ]w <Plug>(ale_next_wrap)
 nmap <silent> ]W <Plug>(ale_last)
 
 " Ctrl-j/k deletes blank line below/above
@@ -37,6 +37,7 @@ nnoremap <Leader>O O<Esc>
 
 " Search for the current word
 nnoremap <Leader>* :Grepper -cword -noprompt<CR>
+
 " Search for the current selection
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)

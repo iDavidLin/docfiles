@@ -31,7 +31,7 @@ alias q='exit'
 alias e='nvim'
 alias screen='screenfetch'
 alias ad='open .'
-alias mx='chmod +x' 
+alias mx='chmod +x'
 alias rr='rm -rf'
 # alias a='ls -FG'
 alias v='mv'
@@ -49,7 +49,7 @@ alias fr='flask run'
 # _python
 alias p='python3'
 alias p2='python'
-alias pi='pip install' 
+alias pi='pip install'
 alias rv='virtualenv -p /usr/local/bin/python3'
 
 # _alfred
@@ -219,10 +219,6 @@ alias dq='cd ~/Downloads'
 
 # _config
 alias d..='cd ~/.config'
-alias da='cd ~/.dotfiles'
+alias df='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'
-
-
-# _move file locations
-# TODO: add move files to hazel alias / function
 

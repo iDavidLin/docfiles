@@ -3,6 +3,11 @@ function gc() {
     git commit -m "$@"
 }
 
+# _tester func
+function gpr() {
+    git pull -r
+}
+
 # create a file and any intermediary directories if necessary
 function td() {
   mkdir -p "$(dirname "$1")/" && touch "$1"
@@ -95,14 +100,6 @@ function ad {
 
 function fex {
   find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
-}
-
-npm() {
-	if [ -f "yarn.lock" ]; then
-		echo "$(tput sgr 0 1)$(tput setaf 1)You should use Yarn for this project.$(tput sgr0)"
-		return
-	fi
-	command npm $@
 }
 
 # Base64 encode
