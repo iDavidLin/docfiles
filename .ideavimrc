@@ -12,6 +12,11 @@ set surround " activate the vim-surround key bindings"
 noremap <C-a> ^
 noremap <C-e> $
 
+" jump to end/begin of line in insert mode
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
+
+
 " Leader o/O to insert line below/above
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
