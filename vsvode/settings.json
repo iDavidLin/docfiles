@@ -1,0 +1,76 @@
+{
+    "window.zoomLevel": 0,
+    "editor.lineNumbers": "off",
+    "window.newWindowDimensions":"maximized",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.showTabs": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "html"
+    },
+    "editor.tabSize": 2,
+    "gitlens.historyExplorer.enabled": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    // Vim config
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before":["g", "d"],
+            "commands": [
+                "editor.action.revealDefinition",
+            ]
+        },{
+            "before":["leader", "p", "d"],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },{
+            "before":["g", "b"],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },{
+            "before":["g", "f"],
+            "commands": [
+                "workbench.action.navigateForward"
+            ]
+        },{
+            "before":["leader", "p", "f"],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },{
+            "before":["leader", "w", "/"],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },{
+            "before":["leader", "w", "-"],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },{
+            "before":[";"],
+            "commands": [
+                "extension.aceJump.multiChar"
+            ]
+        }
+    ],
+    "typescript.useCodeSnippetsOnMethodSuggest": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[scala]": {
+    
+  },
+}
