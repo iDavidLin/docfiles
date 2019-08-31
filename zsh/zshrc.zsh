@@ -6,7 +6,10 @@ source ~/.dotfiles/zsh/functions/functions.zsh
 source ~/.dotfiles/zsh/bindings.zsh
 
 # _secret configs
-source ~/.secrets
+
+if [ -f ~/.secrets ]; then
+    source ~/.secrets
+fi
 
 setopt AUTO_CD
 
