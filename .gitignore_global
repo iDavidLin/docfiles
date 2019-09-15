@@ -1,0 +1,11 @@
+# metals
+.metals
+.bloop
+
+# itellij
+.idea
+
+# misc
+.DS_Store
+
+# run git config --global core.excludesfile ~/.dotfiles/.gitignore_global
