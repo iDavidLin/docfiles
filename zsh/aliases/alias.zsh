@@ -58,7 +58,7 @@ alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
 
 # _docker
-alias k='docker'
+alias k='kubectl'
 alias kc='docker-compose'
 alias kcs='docker-compose ps'
 alias kl='docker logs'
