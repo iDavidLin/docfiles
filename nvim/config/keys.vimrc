@@ -53,16 +53,6 @@ nnoremap <Leader>b :FZFBuffers<CR>
 nnoremap <Leader>h :FZFHistory<CR>
 nnoremap <Leader>t :FZFBTags<CR>
 
-" navigation splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" navigation with ctrl + hjkl
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-
 " enable arrow keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -71,7 +61,24 @@ noremap <Right> <Nop>
 
 " Nerdtree Settings
 " autocmd VimEnter * NERDTree | wincmd p
-map <Leader>n :NERDTreeToggle<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
+noremap <Leader>v :NERDTreeFind<CR>
 
 " Tagbar
 nmap <Leader>t :TagbarToggle<CR>
+
+" easymotion
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)

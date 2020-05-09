@@ -100,6 +100,7 @@ Plug 'kassio/neoterm'
 Plug 'Shougo/neomru.vim'
 
 Plug 'majutsushi/tagbar'
+Plug 'easymotion/vim-easymotion'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
