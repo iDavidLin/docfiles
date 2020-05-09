@@ -88,6 +88,8 @@ Plug 'skammer/vim-css-color'
 " Colorschemes
 Plug 'dracula/vim', { 'name': 'dracula' }
 
+" highlight words
+Plug 'lfv89/vim-interestingwords'
 
 " Git
 Plug 'tpope/vim-fugitive'
