@@ -1,4 +1,4 @@
-filetype off                  " required
+" filetype off                  " required
 
 " set packpath^=~/.vim
 
@@ -29,7 +29,6 @@ Plug 'junegunn/vim-easy-align'
 
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
@@ -63,6 +62,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sbdchd/neoformat'
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-commentary'
 
 
 " For Vimscript
