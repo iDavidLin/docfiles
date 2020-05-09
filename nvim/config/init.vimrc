@@ -60,7 +60,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
-Plug 'editorconfig/ediorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
+
 
 " For Vimscript
 Plug 'tpope/vim-scriptease'
@@ -96,6 +97,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'machakann/vim-highlightedyank'
 Plug 'kassio/neoterm'
 Plug 'Shougo/neomru.vim'
+
+Plug 'majutsushi/tagbar'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
