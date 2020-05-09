@@ -1,8 +1,8 @@
 " navigation splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
 
 inoremap <C-n> <esc>f"a
 
@@ -16,15 +16,10 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" navigation between splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
 " Mappings in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
-nmap <silent> [w <Plug>(ale_previous_wrap)
+nmap <silent> [w <Plug>(ale_previous_wrap) 
 nmap <silent> ]w <Plug>(ale_next_wrap)
 nmap <silent> ]W <Plug>(ale_last)
 
@@ -52,5 +47,9 @@ nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 
 " fzf-mappings
-nnoremap <C-p> :<C-u>FZF<CR>
+let g:fzf_command_prefix = 'FZF'
+noremap <C-p> :<C-u>FZF<CR>
+nnoremap <Leader>b :FZFBuffers<CR>
+nnoremap <Leader>h :FZFHistory<CR>
+nnoremap <Leader>t :FZFBTags<CR>
 
