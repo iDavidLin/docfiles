@@ -4,7 +4,7 @@
 " nnoremap <C-L> <C-W><C-L>
 " nnoremap <C-H> <C-W><C-H>
 
-inoremap <C-n> <esc>f"a
+" inoremap <C-n> <esc>f"a
 
 " navigation with ctrl + hjkl
 map <C-J> <C-W>j<C-W>_
@@ -53,3 +53,22 @@ nnoremap <Leader>b :FZFBuffers<CR>
 nnoremap <Leader>h :FZFHistory<CR>
 nnoremap <Leader>t :FZFBTags<CR>
 
+" navigation splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" navigation with ctrl + hjkl
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+
+" enable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+" Nerdtree Settings
+" autocmd VimEnter * NERDTree | wincmd p
+map <Leader>n :NERDTreeToggle<CR>

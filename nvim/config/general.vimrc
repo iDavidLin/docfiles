@@ -22,11 +22,6 @@ set splitright
 
 set noshowmode
 
-" navigation splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -67,19 +62,10 @@ set termguicolors
 " vnoremap <A-j> :m '>+1<CR>gv=gv
 " vnoremap <A-k> :m '<-2<CR>gv=gv
 
-inoremap <C-n> <esc>f"a
+" inoremap <C-n> <esc>f"a
 
 set backspace=indent,eol,start
 
-" navigation with ctrl + hjkl
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-
-" enable arrow keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
 
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
