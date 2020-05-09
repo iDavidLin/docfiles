@@ -13,9 +13,6 @@ set hlsearch
 " set history
 set history=200
 
-" lightline settings
-set laststatus=2
-
 " set the split style
 set splitbelow
 set splitright
@@ -50,10 +47,9 @@ let &t_EI = "\e[2 q"
 " augroup END
 
 
-set novisualbell
-set background=dark
-set termguicolors
-" colorscheme material-monokai
+" theme
+syntax enable
+colorscheme dracula
 
 " nnoremap <A-j> :m .+1<CR>==
 " nnoremap <A-k> :m .-2<CR>==

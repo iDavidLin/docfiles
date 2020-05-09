@@ -19,7 +19,7 @@ noremap <Right> <Nop>
 
 " Mappings in the style of unimpaired-next
 nmap <silent> [W <Plug>(ale_first)
-nmap <silent> [w <Plug>(ale_previous_wrap) 
+nmap <silent> [w <Plug>(ale_previous_wrap)
 nmap <silent> ]w <Plug>(ale_next_wrap)
 nmap <silent> ]W <Plug>(ale_last)
 
@@ -72,3 +72,6 @@ noremap <Right> <Nop>
 " Nerdtree Settings
 " autocmd VimEnter * NERDTree | wincmd p
 map <Leader>n :NERDTreeToggle<CR>
+
+" Tagbar
+nmap <Leader>t :TagbarToggle<CR>

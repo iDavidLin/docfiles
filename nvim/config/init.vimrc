@@ -30,7 +30,7 @@ Plug 'junegunn/vim-easy-align'
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
-Plug 'SirVer/ultisnips' 
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " On-demand loading
@@ -56,11 +56,13 @@ Plug '~/my-prototype-plugin'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-projectionist'
-Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'mhinz/vim-startify'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
 " For Vimscript
@@ -84,11 +86,8 @@ Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'skammer/vim-css-color'
 
 " Colorschemes
-Plug 'lifepillar/vim-solarized8'
-Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-one'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'reedes/vim-colors-pencil'
+Plug 'dracula/vim', { 'name': 'dracula' }
+
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -107,7 +106,9 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
 let g:deoplete#enable_at_startup = 1
+
 " Initialize plugin system
 call plug#end()
 
