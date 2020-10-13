@@ -17,6 +17,24 @@ setopt AUTO_CD
 export EDITOR="vim"
 bindkey -v
 
+export VISUAL=nvim
+alias vi=nvim
+alias vim=nvim
+
+# nvim
+export VIMCONFIG="~/.dotfiles/nvim"
+export VIMDATA="~/.local/share/nvim"
+export PATH="$PATH:$VIMCONFIG/pack/bundle/start/fzf/bin"
+
+# fzf
+export FZF_DEFAULT_COMMAND="rg --files"
+# export FZF_DEFAULT_OPTS="--layout=default --preview '(highlight -O ansi {} || cat {}) 2> /dev/null'"
+
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash 
+
+
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward

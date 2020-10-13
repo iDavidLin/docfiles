@@ -48,7 +48,7 @@ nnoremap <Leader>O O<Esc>
 
 " fzf-mappings
 let g:fzf_command_prefix = 'FZF'
-noremap <C-p> :<C-u>FZF<CR>
+nnoremap <Leader>f :<C-u>FZF<CR>
 nnoremap <Leader>b :FZFBuffers<CR>
 nnoremap <Leader>h :FZFHistory<CR>
 nnoremap <Leader>t :FZFBTags<CR>
@@ -69,8 +69,8 @@ nmap <Leader>t :TagbarToggle<CR>
 
 " easymotion
 " <Leader>f{char} to move to {char}
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
+" map  <Leader>f <Plug>(easymotion-bd-f)
+" nmap <Leader>f <Plug>(easymotion-overwin-f)
 
 " s{char}{char} to move to {char}{char}
 nmap <Leader>s <Plug>(easymotion-overwin-f2)

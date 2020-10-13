@@ -9,3 +9,6 @@ else
     print "404: ~/.dotfiles/zsh/zshrc.zsh not found."
 fi
 ```
+
+Neovim on Manjaro. Need to create `~/.config/nvim/init.vim` and `source ~/.dotfiles/nvim/init.vim`
+neovim simply looks for an init.vim file at that location.
